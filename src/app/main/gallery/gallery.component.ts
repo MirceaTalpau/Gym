@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+interface images{
+  src:string;
+  alt:string;
+}
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-gallery',
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.scss']
 })
-export class AppComponent {
-  images=[
+export class GalleryComponent implements OnInit {
+
+  @Input() images:images[] = [
     {
       src:'../assets/vestiar.jpg',
       alt:'vestiar'
@@ -31,6 +37,14 @@ export class AppComponent {
       src:'../assets/sauna3.jpg',
       alt:'sauna3'
     },
-  ]
-  title = 'Gym';
+  ];
+
+  ngOnInit() {
+   
+  }
+  
+  
+
+
+
 }

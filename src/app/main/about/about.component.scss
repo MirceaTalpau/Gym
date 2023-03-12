@@ -1,0 +1,74 @@
+.container{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    margin: auto;
+    
+}
+
+.features{
+    display: flex;
+    margin: 5%;
+}
+
+.first-column{
+    width: 100%;
+}
+
+.second-column{
+    width: 100%;
+}
+.text{
+    font-size: medium;
+}
+
+.info span, .info2 span{
+    color: red;
+}
+
+.first-column,.second-column{
+    list-style-type: none;
+}
+
+mat-icon{
+    color: red;
+}
+
+.ul-text{
+    padding-left: 5px;
+    font-size: larger;
+    font-weight: 700;
+
+}
+
+.info2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.info2-text{
+    width: 75%;
+}
+
+.info2-second-column{
+    margin-left: 5%;
+}
+
+
+.text2{
+    font-size: medium;
+}
+
+hr{
+    width: 150%;
+}
+
+img{
+    margin-top: 50px;
+    height: 200px;
+    width: 25%;
+}
+

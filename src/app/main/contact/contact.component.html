@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="contact-details">
+        <h6>Ogen Gym</h6>
+        <div>Bulevardul Aurel Vlaicu 191</div>
+        <div>Constanța 900380, Romania</div>
+        <br>
+        <div>Email: info@fitnessfactorymaine.com</div>
+        <div>Phone: 207-797-5700</div>
+        <br>
+        <div>Working Hours</div>
+        <br>
+        <div>Weekdays: 05:00 - 00:00</div>
+        <div>Saturday: 06:00 - 23:00</div>
+        <div>Sunday: 07:00 - 23:00</div>
+    </div>
+    <div class="google-map">
+        <google-map height="400px"
+            width="550px"
+            [center]="center"
+            [zoom]="zoom">
+            <map-marker [position]="center"></map-marker>
+        </google-map>
+        
+
+    </div>
+</div>
+
+<app-footer>
