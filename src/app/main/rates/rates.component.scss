@@ -1,16 +1,143 @@
-mat-card{
-    max-width: 300px;
+.page-container{
+    min-height: 100vh;
+    width: 100%;
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container-title{
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    
+}
+
+
+.cards-container{
+    background-color:  #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 500px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    
+}
+
+
+
+.cards1{
+    max-width: 400px;
+    height: 300px;
+    margin-left: 40px;
+    margin-right: 5%;
+
+    flex-basis:content;
+    transition: all .5s ease-in-out;
+    user-select: none;
+    flex-shrink: 2;
+}
+
+.cards1:hover{
+    box-shadow: 1px 8px 20px grey;
+    transform: translateY(+10px);
+}
+
+.cards1:last-child{
+    margin-right: 40px;
+}
+
+.cards2{
+    width: 40%;
+    height: 300px;
+    margin-left: 5%;
+
+    transition: all .5s ease-in-out;
+    user-select: none;
+}
+
+.cards2:hover{
+    box-shadow: 1px 8px 20px grey;
+    transform: translateY(+10px);
+}
+
+.cards2:first-child{
+    margin-left: 0%;
 }
 
 .title{
     text-align: center;
+    font-size: medium;
 }
 
 mat-card-content{
     text-align: center;
 }
 
-span{
+.price{
     color: red;
     font-size: 50px;
+}
+
+.month{
+    color: grey;
+    font-size: larger;
+    font: italic;
+}
+
+.hour{
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.button-color{
+    text-align: center;
+    width: 95%;
+    color: black;
+    border: red 1px solid;
+    background-color: white;
+    box-shadow: none;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 7px;
+}
+
+.button-color:hover{
+    background-color: red;
+}
+.day{
+    margin-top: 2%;
+    width: 60%;
+    height: 120px;
+    background-color: #f2f2f2;
+}
+.day-pass{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.day-pass-price{
+    margin-left: 50px;
+}
+.join{
+    margin-top: 2%;
+    width: 60%;
+    height: 200px;
+    background-color: red;
+}
+
+.join-text1{
+    margin-top: 25px;
+    color: white;
+}
+
+.join-text2{
+    color: white;
+}
+
+.join-button{
+    color: white;
 }

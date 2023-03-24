@@ -1,4 +1,52 @@
-<mat-card>
-    <mat-card-title class="title">Regular auto</mat-card-title>
-    <mat-card-content><span>30$</span>/ceva</mat-card-content>
-</mat-card>
+<app-navbar></app-navbar>
+<div class="page-container">
+    
+    <div class="cards-container">
+        <div class="container-title">Auto Withdrawal Rates</div>
+        <mat-card class="cards1" *ngFor="let cardInfo of cardsInfo">
+            <mat-card-title class="title">{{cardInfo.title}}</mat-card-title>
+            <mat-card-content>
+                <span class="price">{{cardInfo.price}}</span>
+                <span class="month">{{cardInfo.month}}</span>
+                <div class="hour">{{cardInfo.hour}}</div>
+                <div>{{cardInfo.initiation}}</div>
+            </mat-card-content>
+            <mat-card-footer>
+                <a button mat-fab extended color="primary" class="button-color" href='/main/about'>Visit our location to join</a>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+    <div class="cards-container">
+        <div class="container-title">PAID IN FULL RATES</div>
+        <mat-card class="cards2">
+            <mat-card-title class="title">1 Month Trial Period</mat-card-title>
+            <mat-card-content>
+                <span class="price">$65</span>
+                <div class="hour">No 24 Hour Access</div>
+            </mat-card-content>
+            <mat-card-footer>
+                <a button mat-fab extended color="primary" class="button-color" href='/main/about'>Visit our location to join</a>
+            </mat-card-footer>
+        </mat-card>
+
+        <mat-card class="cards2">
+            <mat-card-title class="title">1 Year PIF</mat-card-title>
+            <mat-card-content>
+                <span class="price">$450</span>
+                <div class="hour">No 24 Hour Access</div>
+            </mat-card-content>
+            <mat-card-footer>
+                <a button mat-fab extended color="primary" class="button-color" href='/main/about'>Visit our location to join</a>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+    <article class="day">
+        <h2 class="day-pass">Day Passes</h2>
+        <span class="day-pass-price">$15/Day</span>
+    </article>
+    <article class="join">
+        <h1 class="join-text1">Now you can save yourself a few steps by signing up for a membership online!</h1>
+        <h5 class="join-text2">Under 23, Senior, High School rates not available online. Some specials might not be available online.</h5>
+        <a mat-button class="join-button">Join Now</a>
+    </article>
+</div>
